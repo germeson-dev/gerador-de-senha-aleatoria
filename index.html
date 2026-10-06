@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de Senhas, Gerador Password, Gerador de Senhas Aleatórias">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+        <img class="logo" src="assets/logo.png" alt="Logo - Gerador de Senha">
+
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> Caracteres</span>
+        <input type="range" id="slider" class="slider" min="4" max="28" value="8"></input>
+
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+    </main>
+    
+    <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password"  onclick="copyPassword()"></span>
+        <span class="tooltip" >Clique na senha acima para copiar! 👆🏼🔐</span></span>
+    </div>    
+
+    <footer>
+        <h3>Desenvolvido por <a href="https://germeson-dev.vercel.app" target="_blank">Germeson Martins</a></h3>
+        <p>2026 &copy Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
